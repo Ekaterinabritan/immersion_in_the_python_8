@@ -1,0 +1,6 @@
+.
+-home_work8.py
+-one_file_csv.csv
+-one_file_result.txt
+-one_result_js.json
+-one_result_pkl.pkl
