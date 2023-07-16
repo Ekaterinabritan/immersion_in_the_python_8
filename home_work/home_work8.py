@@ -55,7 +55,7 @@ def json_csv(csv_file: str = 'one_file_csv.csv',
 
 #Результаты обхода сохраните pickle:
 def pkl_csv(csv_file: str = 'one_file_csv.csv',
-             pkl_file: str = 'one_result_pkl.pkl'):
+             pkl_file: str = 'one_reslt_pkl.pkl'):
     with open(csv_file, 'r') as f:
         pickle.dump(list(csv.reader(f)), open(pkl_file, 'wb'))
 
