@@ -19,10 +19,7 @@ def search_files(ext: str = '.json', dir_: str = '.') -> None:
 
     for file in files:
         name, _ = os.path.splitext(file)
-        with (
-            open(file, 'r') as r_file,
-            open(name + '.pickle', 'wb') as w_file
-        ):
+        with (open(file, 'r') as r_file,open(name + '.pickle', 'wb') as w_file):
             data = r_file.read()
             pickle.dump(file=w_file, obj=data)
 
